@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stellantis/pages/book_page.dart';
 import 'package:stellantis/pages/conectivity_page.dart';
 import 'package:stellantis/pages/electroposts_page.dart';
 import 'package:stellantis/pages/initial_page.dart';
-import 'package:stellantis/pages/login_page.dart';
-import 'package:stellantis/pages/stellantis_page.dart';
 import 'package:stellantis/pages/user_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -28,6 +25,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(237, 237 , 227, 1),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(237, 237 , 227, 1),
+        shadowColor: null,
+        foregroundColor:const Color.fromRGBO(24, 19 , 31, 1),
+      ),
       body: PageView(
         controller: pc,
         onPageChanged: setPaginaAtual,
@@ -46,15 +49,15 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.pie_chart), label: 'Home'),
+              icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.swap_horiz), label: 'Reservar'),
+              icon: Icon(Icons.departure_board), label: 'Reservar'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.swap_horiz), label: 'Eletropostos'),
+              icon: Icon(Icons.local_gas_station), label: 'Eletropostos'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.swap_horiz), label: 'Conectivity'),
+              icon: Icon(Icons.car_rental), label: 'Conectivity'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.verified_user), label: 'User')
+              icon: Icon(Icons.people), label: 'User')
         ],
         onTap: (pagina) {
           pc.animateToPage(

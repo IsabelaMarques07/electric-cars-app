@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget{
                           ),
                         );
                 },
-                child: const Text('Login'),
+                child: const Text('Loginn'),
               ),
             ElevatedButton(
               onPressed: () {

@@ -19,8 +19,6 @@ ThemeData appTheme = ThemeData(
               borderSide: BorderSide.none),
   ),
   appBarTheme: const AppBarTheme(
-    titleTextStyle: TextStyle(color:const Color.fromARGB(255, 62 , 137, 137), fontSize: 25),
-    backgroundColor: Colors.black,
-    iconTheme: IconThemeData(color: const Color.fromARGB(255, 62 , 137, 137)),
-  ),
+    shadowColor: null,
+  )
 );
