@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stellantis/pages/home_page.dart';
-import 'package:stellantis/pages/login_page.dart';
+import 'package:stellantis/pages/first_page.dart';
 import 'package:stellantis/pages/register_page.dart';
 import 'package:stellantis/pages/reservation_detalhes_page.dart';
 import 'package:stellantis/pages/team_page.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: appTheme,
       routes: {
-        '/': (context) => LoginPage(),
+        '/': (context) => FirstPage(),
         '/home': (context) => HomePage(),
         '/team': (context) => TeamPage(),
         '/register': (context) => RegisterPage(),
